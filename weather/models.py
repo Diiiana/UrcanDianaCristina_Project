@@ -24,5 +24,4 @@ class Weather(models.Model):
     windSpeed = models.FloatField(default=0)
 
     def __str__(self):
-        #ceva = str(self.currentDirection) + " " + str(self.airTemperature) + " " +str(self.pressure)+ " " + str(self.currentSpeed)+ " " + str(self.humidity)+ " " + str(self.iceCover)+ " " + str(self.precipitation)+ " " + str(self.snowDepth)+ " " + str(self.seaLevel)+ " " + str(self.visibility)+ " " + str(self.waterTemperature)+ " " + str(self.windWaveHeight)+ " " + str(self.waveDirection)+ " " + str(self.waveHeight)+ " " + str(self.windWaveDirection)+ " " + str(self.windWavePeriod)+ " " + str(self.windDirection)+ " " + str(self.windSpeed)+ " " + str(self.wavePeriod)
-        return ""
+      return "Weather"
