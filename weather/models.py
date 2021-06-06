@@ -30,5 +30,5 @@ class Weather(models.Model):
 
     def __str__(self):
       # return "Weather"
-      ceva = str(self.airTemperature) + " " +str(self.pressure)+ " " + str(self.humidity)+ " " + str(self.precipitation)+ " " + str(self.seaLevel)+ " " + str(self.visibility)+ " " + str(self.waterTemperature)+ " " + str(self.windWaveHeight)+ " " + str(self.waveDirection)+ " " + str(self.waveHeight)+ " " + str(self.windWaveDirection)+ " " + str(self.windDirection)+ " " + str(self.windSpeed)+ "\n"
-      return ceva
+      # ceva = str(self.airTemperature) + " " +str(self.pressure)+ " " + str(self.humidity)+ " " + str(self.precipitation)+ " " + str(self.seaLevel)+ " " + str(self.visibility)+ " " + str(self.waterTemperature)+ " " + str(self.windWaveHeight)+ " " + str(self.waveDirection)+ " " + str(self.waveHeight)+ " " + str(self.windWaveDirection)+ " " + str(self.windDirection)+ " " + str(self.windSpeed)+ "\n"
+      return str(self.time) + "\n"

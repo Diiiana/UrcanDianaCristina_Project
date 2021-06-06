@@ -11,7 +11,8 @@ first_location = (40.105106, -73.890797) # New Jersey Bight
 second_location = (39.978344, -73.947308)
 third_location = (39.886616, -74.016935)
 
-start = datetime.fromtimestamp(1591349494, tz=timezone.utc)
+# start = datetime.fromtimestamp(1591304400, tz=timezone.utc)
+start = datetime.fromtimestamp(1598310000, tz=timezone.utc)
 end = datetime.now(tz=timezone.utc)
 
 
@@ -30,7 +31,7 @@ def get_json(location):
             'source': 'noaa'
         },
         headers={
-            'Authorization': '0318522a-c60f-11eb-80ed-0242ac130002-031852a2-c60f-11eb-80ed-0242ac130002'
+            'Authorization': '9e5450a0-c5f5-11eb-8d12-0242ac130002-9e545118-c5f5-11eb-8d12-0242ac130002'
         }
     )
     return response.json()
