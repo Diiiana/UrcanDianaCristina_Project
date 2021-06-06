@@ -12,7 +12,7 @@ second_location = (39.978344, -73.947308)
 third_location = (39.886616, -74.016935)
 
 # start = datetime.fromtimestamp(1591304400, tz=timezone.utc)
-start = datetime.fromtimestamp(1598310000, tz=timezone.utc)
+start = datetime.fromtimestamp(1608076800, tz=timezone.utc)
 end = datetime.now(tz=timezone.utc)
 
 

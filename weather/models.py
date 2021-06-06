@@ -32,3 +32,28 @@ class Weather(models.Model):
       # return "Weather"
       # ceva = str(self.airTemperature) + " " +str(self.pressure)+ " " + str(self.humidity)+ " " + str(self.precipitation)+ " " + str(self.seaLevel)+ " " + str(self.visibility)+ " " + str(self.waterTemperature)+ " " + str(self.windWaveHeight)+ " " + str(self.waveDirection)+ " " + str(self.waveHeight)+ " " + str(self.windWaveDirection)+ " " + str(self.windDirection)+ " " + str(self.windSpeed)+ "\n"
       return str(self.time) + "\n"
+
+    def data_dict(self):
+        return {
+            "time": self.time,
+            "latitude": self.latitude,
+            "longitude": self.longitude,
+            "airTemperature": self.airTemperature,
+            "cloudCover": self.cloudCover,
+            "gust": self.gust,
+            "humidity": self.humidity,
+            "precipitation": self.precipitation,
+            "pressure": self.pressure,
+            "seaLevel": self.seaLevel,
+            "swellDirection": self.seaLevel,
+            "swellHeight": self.swellHeight,
+            "swellPeriod": self.swellPeriod,
+            "visibility": self.visibility,
+            "waterTemperature": self.waterTemperature,
+            "waveDirection": self.waveDirection,
+            "waveHeight": self.waveHeight,
+            "windWaveDirection": self.windWaveDirection,
+            "windWaveHeight": self.windWaveHeight,
+            "windDirection": self.windDirection,
+            "windSpeed": self.windSpeed
+        }
