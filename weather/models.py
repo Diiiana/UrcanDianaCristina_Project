@@ -1,7 +1,12 @@
+import django
+from django.utils import timezone
+
 from django.db import models
+
 
 # Create your models here.
 class Weather(models.Model):
+    time = models.DateTimeField(default=django.utils.timezone.now)
     latitude = models.FloatField(default=0)
     longitude = models.FloatField(default=0)
     airTemperature = models.FloatField(default=0)
@@ -24,4 +29,6 @@ class Weather(models.Model):
     windSpeed = models.FloatField(default=0)
 
     def __str__(self):
-      return "Weather"
+      # return "Weather"
+      ceva = str(self.airTemperature) + " " +str(self.pressure)+ " " + str(self.humidity)+ " " + str(self.precipitation)+ " " + str(self.seaLevel)+ " " + str(self.visibility)+ " " + str(self.waterTemperature)+ " " + str(self.windWaveHeight)+ " " + str(self.waveDirection)+ " " + str(self.waveHeight)+ " " + str(self.windWaveDirection)+ " " + str(self.windDirection)+ " " + str(self.windSpeed)+ "\n"
+      return ceva

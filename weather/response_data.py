@@ -41,6 +41,7 @@ def insert_db(response):
     hours = response['hours']
     for data in hours:
         weather_data = Weather(
+            time=data['time'],
             latitude=meta['lat'],
             longitude=meta['lng'],
             airTemperature=data['airTemperature']['noaa'],
