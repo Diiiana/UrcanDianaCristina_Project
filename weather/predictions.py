@@ -136,7 +136,6 @@ def get_wind_direction_prediction(coordinates):
     regression = DecisionTreeRegressor(random_state=0)
     regression.fit(train_x, train_y)
     prediction = regression.predict(test_x)
-    error = np.mean((prediction - test_y) ** 2)
 
     print('             Wind direction')
     print(panda.DataFrame({
@@ -145,7 +144,6 @@ def get_wind_direction_prediction(coordinates):
         'error': (test_y - prediction)
     }))
 
-    print("     ERROR: " + str(error) + "\n")
 
 
 def get_wave_direction_prediction(coordinates):
