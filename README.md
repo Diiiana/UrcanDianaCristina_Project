@@ -9,3 +9,5 @@ valuri, vizibilitate).
 Am extras date pentru trei puncte diferite din zona NY si am facut partea de predictii temperatura
 pentru toate cele trei puncte. Datele sunt in intervalul 05.06.2020-03.09.2020; se puteau prelua mai multe date, dar era dificil de antrenat modelul, avand in vedere ca nu s-au salvat valorile antrenate.
 Executia este lansata cu python manage.py runserver.
+
+Fisierul Results continte rezultatele obtinute.
